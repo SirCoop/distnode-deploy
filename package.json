@@ -4,7 +4,7 @@
   "description": "Travis CI Pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Fake Tests\" && exit 0"
+    "test": "tape ./test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/SirCoop/distnode-deploy#readme",
   "dependencies": {
     "fastify": "3.2"
+  },
+  "devDependencies": {
+    "tape": "^5.2.2"
   }
 }
