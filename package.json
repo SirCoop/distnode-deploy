@@ -4,7 +4,7 @@
   "description": "Travis CI Pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "tape ./test/**/*.js"
+    "test": "nyc tape ./test/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
     "fastify": "3.2"
   },
   "devDependencies": {
+    "node-fetch": "2.6",
+    "nyc": "^15.1.0",
     "tape": "^5.2.2"
   }
 }
